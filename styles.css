@@ -1,6 +1,3 @@
-/* Importar fuente de Google */
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400;700&display=swap');
-
 body {
     font-family: 'Exo 2', sans-serif;
     background-color: #f7f7f7;
@@ -62,15 +59,10 @@ select:focus {
     border-color: #4a90e2;
 }
 
-input[type="text"].completed,
-input[type="number"].completed,
-select.completed {
-    border-color: #28a745;
-}
-
 .divEnviar {
+    padding-top: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 button {
@@ -82,6 +74,7 @@ button {
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s;
+    margin-left: 10px;
 }
 
 button:hover {
