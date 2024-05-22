@@ -11,90 +11,101 @@
   </head>
   <body>
     <script src="script.js" defer></script>
-    <div class="divContainer">
+    <div class="divGral">
       <h2 class="title">Ingrese los datos correspondientes.</h2>
-      <form id="form">
-        <div class="divNombre">
-
-          <label for="nombre">Nombre</label>
-          <input
-            type="text"
-            name="Nombre"
-            id="nombre"
-            placeholder="Nombre"
-            
-            maxlength="40"
-          />
-
-          <label for="apellido">Apellido</label>
-          <input
-            type="text"
-            name="apellido"
-            id="apellido"
-            placeholder="Apellido"
-            
-            maxlength="40"
-          />
-
-        </div>
-        <div class="divCiudad">
-
-          <label for="calle">Calle</label>
-          <input
-            type="text"
-            name="Calle"
-            id="calle"
-            placeholder="Calle"
-            
-            maxlength="100"
-          />
-
-          <label for="número">Número</label>
-          <input
-            type="number"
-            name="Número"
-            id="número"
-            placeholder="Número"
-            
-            maxlength="5"
-          />
-
-          <label for="ciudad">Ciudad</label>
-          <select name="ciudades" id="ciudad" >
-            <option value="">Seleccione una ciudad</option>
-          </select>
-
-        </div>
-        <div class="divDepto">
-
-          <label for="piso">Piso</label>
-          <input
-            type="number"
-            a
-            class="inpu2"
-            name="piso"
-            id="piso"
-            placeholder="Piso"
-          />
-
-          <label for="depto">Departamento</label>
-          <input
-            type="number"
-            class="input2"
-            name="depto"
-            id="depto"
-            onchange="functComplete()"
-            placeholder="Departamento"
-          />
-
-          <div class="divEnviar">
-            <button id="guardar"  type="submit">Guardar</button>
-            <button>Listar</button>
+      <div class="divContGrande">
+        <div class="divErroresLista">
+          <div id="errores" class="divErrores">
+            <p></p>
           </div>
-
-
         </div>
-      </form>
+        <div class="divContainer">
+          <form id="form">
+            <div class="divNombre">
+    
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Nombre"
+                required
+                maxlength="40"
+              />
+    
+              <label for="apellido">Apellido</label>
+              <input
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="Apellido"
+                required
+                maxlength="40"
+              />
+    
+            </div>
+            <div class="divCiudad">
+    
+              <label for="calle">Calle</label>
+              <input
+                type="text"
+                name="calle"
+                id="calle"
+                placeholder="Calle"
+                required
+                maxlength="100"
+              />
+    
+              <label for="número">Número</label>
+              <input
+                type="number"
+                name="número"
+                id="número"
+                placeholder="Número"
+                required
+                maxlength="5"
+              />
+    
+              <label for="ciudad">Ciudad</label>
+              <select name="ciudades" id="ciudad" >
+                <option value="">Seleccione una ciudad</option>
+              </select>
+    
+            </div>
+            <div class="divDepto">
+    
+              <label for="piso">Piso</label>
+              <input
+                type="number"
+                class="inpu2"
+                name="piso"
+                id="piso"
+                placeholder="Piso"
+                maxlength="2"
+              />
+    
+              <label for="depto">Departamento</label>
+              <input
+                type="number"
+                class="input2"
+                name="departamento"
+                id="depto"
+                placeholder="Departamento"
+                maxlength="2"
+              />
+    
+              <div class="divEnviar">
+                <button id="guardar"  type="submit">Guardar</button>
+                <button id="listar">Listar</button>
+              </div>
+    
+    
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+
+    
   </body>
 </html>
