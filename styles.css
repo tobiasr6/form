@@ -14,6 +14,7 @@ body {
     padding: 2em;
     border-radius: 10px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+    height: 90%;
     width: 100%;
     max-width: 1200px;
     flex-direction: row;
@@ -46,20 +47,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.divErrores{
+.divErrores, .divUsers{
     border-radius: 15px;
-    width: max-content;
+    width: 500px;
     height: max-content;
 
     padding: 5px;
 
-    font-weight: 600;
+    font-weight: 500;
 }
 .rojo{
-    background-color: rgba(255, 0, 0, 0.5);
-
+    background-color: rgba(255, 0, 0, 0.75);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.green{
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.divUsers p{
+    padding: 5px;
+    border: 3px rgba(0, 128, 0, 0.175) solid;
+    border-radius: 8px;
 }
 
 .title {
@@ -107,8 +119,8 @@ select:focus {
     justify-content: end;
 }
 
-button {
-    background-color: #4a90e2;
+.listar, .boton {
+    background-color: rgb(74, 144, 226);
     color: white;
     border: none;
     padding: 0.8em 1.5em;
